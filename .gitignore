@@ -1,0 +1,16 @@
+# Derived databases: 184 MB each, over GitHub's 100 MB limit, and rebuilt from
+# data/snapshot/ with buildsql.py + scenarios/make_scenarios.py (deterministic).
+data/thelook.sqlite
+scenarios/*.sqlite
+
+# Never commit credentials (course rule)
+*key*
+.env
+
+# Python / tooling
+__pycache__/
+*.pyc
+.traces/
+
+# Word lock files
+~$*

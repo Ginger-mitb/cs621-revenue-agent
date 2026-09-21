@@ -1,0 +1,180 @@
+{
+  "source": "bigquery-public-data.thelook_ecommerce",
+  "cutoff": "2026-09-01",
+  "exported_at_utc": "2026-09-17T06:01:51+00:00",
+  "versions": {
+    "pandas": "2.2.3",
+    "pyarrow": "23.0.1"
+  },
+  "bytes_processed": 435914497,
+  "tables": {
+    "distribution_centers": {
+      "rows": 10,
+      "columns": [
+        "id",
+        "name",
+        "latitude",
+        "longitude"
+      ],
+      "file_bytes": 3238,
+      "sha256": "6845c82ac326bddb20649a68be6c532a25be5aa2755f121faa75de459d9c30d4"
+    },
+    "products": {
+      "rows": 29120,
+      "columns": [
+        "id",
+        "cost",
+        "category",
+        "name",
+        "brand",
+        "retail_price",
+        "department",
+        "sku",
+        "distribution_center_id"
+      ],
+      "file_bytes": 2294191,
+      "sha256": "49eec7e6b3c53d3291b2b9b005de3471ae9af8c5c7201638b1a0cc72747dc583"
+    },
+    "orders": {
+      "rows": 117114,
+      "columns": [
+        "order_id",
+        "user_id",
+        "status",
+        "gender",
+        "created_at",
+        "returned_at",
+        "shipped_at",
+        "delivered_at",
+        "num_of_item"
+      ],
+      "file_bytes": 3793071,
+      "sha256": "7ce737deed081dd7ecd8576c6cdc33465f786f3884744df8c1af6e299d665926"
+    },
+    "order_items": {
+      "rows": 170036,
+      "columns": [
+        "id",
+        "order_id",
+        "user_id",
+        "product_id",
+        "inventory_item_id",
+        "status",
+        "created_at",
+        "shipped_at",
+        "delivered_at",
+        "returned_at",
+        "sale_price"
+      ],
+      "file_bytes": 7132827,
+      "sha256": "de187b0444b22b69e15d004ebbd903289b1bae8de1d2379fa6eed2078e827f8b"
+    },
+    "users": {
+      "rows": 96872,
+      "columns": [
+        "id",
+        "first_name",
+        "last_name",
+        "email",
+        "age",
+        "gender",
+        "state",
+        "street_address",
+        "postal_code",
+        "city",
+        "country",
+        "latitude",
+        "longitude",
+        "traffic_source",
+        "created_at"
+      ],
+      "file_bytes": 5883640,
+      "sha256": "541630fe743bad8a3d847ce8509f3b0312ffaf65f9d7e087cfe0b8dd1086595b"
+    },
+    "inventory_items": {
+      "rows": 484911,
+      "columns": [
+        "id",
+        "product_id",
+        "created_at",
+        "sold_at",
+        "cost",
+        "product_category",
+        "product_name",
+        "product_brand",
+        "product_retail_price",
+        "product_department",
+        "product_sku",
+        "product_distribution_center_id"
+      ],
+      "file_bytes": 20614314,
+      "sha256": "f69f8e65b8b5cb74260f5b01f59330b83ac3d9346ca8adbc3032349870f4e14a"
+    },
+    "sessions": {
+      "rows": 667213,
+      "columns": [
+        "session_id",
+        "user_id",
+        "traffic_source",
+        "browser",
+        "state",
+        "started_at",
+        "n_events",
+        "saw_product",
+        "added_to_cart",
+        "purchased"
+      ],
+      "file_bytes": 30066429,
+      "sha256": "4f61647ad29e0210fdcd14015660949f34187e6f58b2cd23f56e55d489b81cc0"
+    }
+  },
+  "checks": {
+    "event_types": {
+      "product": 843938,
+      "cart": 594376,
+      "department": 593336,
+      "purchase": 180858,
+      "cancel": 125623,
+      "home": 87222
+    },
+    "max_order_created_at": "2026-08-31 23:44:11+00:00",
+    "order_items_without_order": 0,
+    "order_items_without_product": 0,
+    "orders_without_user": 0,
+    "session_purchase_rate": 0.2544,
+    "monthly_tail": {
+      "2026-02": {
+        "items": 4522,
+        "revenue": 272342.23
+      },
+      "2026-03": {
+        "items": 5439,
+        "revenue": 326029.33
+      },
+      "2026-04": {
+        "items": 5425,
+        "revenue": 328108.86
+      },
+      "2026-05": {
+        "items": 6068,
+        "revenue": 358467.25
+      },
+      "2026-06": {
+        "items": 6611,
+        "revenue": 387567.92
+      },
+      "2026-07": {
+        "items": 7312,
+        "revenue": 429078.84
+      },
+      "2026-08": {
+        "items": 8851,
+        "revenue": 516172.14
+      },
+      "2026-09": {
+        "items": 295,
+        "revenue": 17008.73
+      }
+    }
+  }
+}

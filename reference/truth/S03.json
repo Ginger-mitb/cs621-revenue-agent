@@ -1,0 +1,817 @@
+{
+  "_meta": {
+    "db": "scenarios/S03.sqlite",
+    "db_sha256": "ebea762ff4eef3b01cf6ce0de08ec1990e930cd2c9fd1fb3f98772dfdf1440a4",
+    "today": "2026-09-01",
+    "generated_at_utc": "2026-09-18T08:07:39+00:00",
+    "definitions": "reference/KPI_DEFINITIONS.md v1",
+    "thresholds": {
+      "unusual_z": 2.0,
+      "zscore_lookback": 24,
+      "driver_min_share": 0.15,
+      "driver_min_lift_gap": 0.5,
+      "min_total_change": 0.02
+    }
+  },
+  "planted": [],
+  "defaults": {
+    "last_month": "2026-08",
+    "previous_month": "2026-07",
+    "last_3_months": [
+      "2026-06",
+      "2026-07",
+      "2026-08"
+    ],
+    "previous_3_months": [
+      "2026-03",
+      "2026-04",
+      "2026-05"
+    ]
+  },
+  "monthly": {
+    "2025-09": {
+      "revenue": 230178.94,
+      "net_revenue": 173902.72,
+      "orders": 2677,
+      "items": 3880,
+      "aov": 85.98,
+      "margin": 0.5198,
+      "mom": -0.0119,
+      "cancelled_share": 0.1505,
+      "returned_share": 0.0938
+    },
+    "2025-10": {
+      "revenue": 248017.73,
+      "net_revenue": 183980.11,
+      "orders": 2888,
+      "items": 4182,
+      "aov": 85.88,
+      "margin": 0.5175,
+      "mom": 0.0775,
+      "cancelled_share": 0.1548,
+      "returned_share": 0.106
+    },
+    "2025-11": {
+      "revenue": 252897.28,
+      "net_revenue": 187030.74,
+      "orders": 2864,
+      "items": 4148,
+      "aov": 88.3,
+      "margin": 0.5219,
+      "mom": 0.0197,
+      "cancelled_share": 0.1487,
+      "returned_share": 0.1131
+    },
+    "2025-12": {
+      "revenue": 273143.4,
+      "net_revenue": 211108.34,
+      "orders": 3153,
+      "items": 4579,
+      "aov": 86.63,
+      "margin": 0.5201,
+      "mom": 0.0801,
+      "cancelled_share": 0.1415,
+      "returned_share": 0.0967
+    },
+    "2026-01": {
+      "revenue": 287619.69,
+      "net_revenue": 214034.42,
+      "orders": 3198,
+      "items": 4714,
+      "aov": 89.94,
+      "margin": 0.5203,
+      "mom": 0.053,
+      "cancelled_share": 0.152,
+      "returned_share": 0.1044
+    },
+    "2026-02": {
+      "revenue": 271856.58,
+      "net_revenue": 207712.61,
+      "orders": 3118,
+      "items": 4545,
+      "aov": 87.19,
+      "margin": 0.5193,
+      "mom": -0.0548,
+      "cancelled_share": 0.1475,
+      "returned_share": 0.0978
+    },
+    "2026-03": {
+      "revenue": 324152.23,
+      "net_revenue": 240348.79,
+      "orders": 3763,
+      "items": 5404,
+      "aov": 86.14,
+      "margin": 0.5184,
+      "mom": 0.1924,
+      "cancelled_share": 0.1547,
+      "returned_share": 0.1007
+    },
+    "2026-04": {
+      "revenue": 330632.82,
+      "net_revenue": 243440.14,
+      "orders": 3716,
+      "items": 5462,
+      "aov": 88.98,
+      "margin": 0.519,
+      "mom": 0.02,
+      "cancelled_share": 0.1531,
+      "returned_share": 0.1031
+    },
+    "2026-05": {
+      "revenue": 359142.18,
+      "net_revenue": 263036.44,
+      "orders": 4158,
+      "items": 6078,
+      "aov": 86.37,
+      "margin": 0.52,
+      "mom": 0.0862,
+      "cancelled_share": 0.145,
+      "returned_share": 0.1099
+    },
+    "2026-06": {
+      "revenue": 387924.07,
+      "net_revenue": 288859.99,
+      "orders": 4528,
+      "items": 6619,
+      "aov": 85.67,
+      "margin": 0.52,
+      "mom": 0.0801,
+      "cancelled_share": 0.1533,
+      "returned_share": 0.0954
+    },
+    "2026-07": {
+      "revenue": 431602.96,
+      "net_revenue": 326481.12,
+      "orders": 5115,
+      "items": 7345,
+      "aov": 84.38,
+      "margin": 0.5198,
+      "mom": 0.1126,
+      "cancelled_share": 0.1503,
+      "returned_share": 0.0919
+    },
+    "2026-08": {
+      "revenue": 519369.9,
+      "net_revenue": 388486.87,
+      "orders": 6150,
+      "items": 8919,
+      "aov": 84.45,
+      "margin": 0.5196,
+      "mom": 0.2034,
+      "cancelled_share": 0.1556,
+      "returned_share": 0.1023
+    }
+  },
+  "last_month": {
+    "period": "2026-08",
+    "headline": {
+      "months": [
+        "2026-08"
+      ],
+      "revenue": 519369.9006087966,
+      "net_revenue": 388486.8705575466,
+      "orders": 6150,
+      "items": 8919,
+      "profit": 269871.89521743584,
+      "aov": 84.45039034289375,
+      "margin": 0.5196140455985158
+    },
+    "vs_previous_month": {
+      "prev": [
+        "2026-07"
+      ],
+      "cur": [
+        "2026-08"
+      ],
+      "revenue_prev": 431602.96,
+      "revenue_cur": 519369.9,
+      "delta": 87766.94,
+      "delta_pct": 0.2034,
+      "volume_effect": 87333.15,
+      "aov_effect": 433.79,
+      "volume_share": 0.9951,
+      "aov_share": 0.0049
+    },
+    "zscore": 1.99,
+    "unusual": false,
+    "drivers": [],
+    "net_drivers": [
+      {
+        "dimension": "dist_center",
+        "segment": "Philadelphia PA",
+        "measure": "net_revenue",
+        "delta": 12140.710059165955,
+        "share_of_change": 0.1957997445136824,
+        "share_of_base": 0.087349859651406,
+        "lift": 2.2415576315185386
+      }
+    ],
+    "contribution_top5": {
+      "customer_type": [
+        {
+          "segment": "returning",
+          "delta": 54509.63,
+          "share_of_change": 0.6211,
+          "share_of_base": 0.4795,
+          "lift": 1.295
+        },
+        {
+          "segment": "new",
+          "delta": 33257.31,
+          "share_of_change": 0.3789,
+          "share_of_base": 0.5205,
+          "lift": 0.728
+        }
+      ],
+      "acq_source": [
+        {
+          "segment": "Search",
+          "delta": 59812.48,
+          "share_of_change": 0.6815,
+          "share_of_base": 0.7082,
+          "lift": 0.962
+        },
+        {
+          "segment": "Organic",
+          "delta": 9939.43,
+          "share_of_change": 0.1132,
+          "share_of_base": 0.1606,
+          "lift": 0.705
+        },
+        {
+          "segment": "Facebook",
+          "delta": 6816.96,
+          "share_of_change": 0.0777,
+          "share_of_base": 0.0491,
+          "lift": 1.583
+        },
+        {
+          "segment": "Display",
+          "delta": 6383.53,
+          "share_of_change": 0.0727,
+          "share_of_base": 0.0341,
+          "lift": 2.136
+        },
+        {
+          "segment": "Email",
+          "delta": 4814.54,
+          "share_of_change": 0.0549,
+          "share_of_base": 0.048,
+          "lift": 1.142
+        }
+      ],
+      "country": [
+        {
+          "segment": "China",
+          "delta": 32342.58,
+          "share_of_change": 0.3685,
+          "share_of_base": 0.3332,
+          "lift": 1.106
+        },
+        {
+          "segment": "United States",
+          "delta": 25279.24,
+          "share_of_change": 0.288,
+          "share_of_base": 0.2274,
+          "lift": 1.267
+        },
+        {
+          "segment": "Brasil",
+          "delta": 8166.43,
+          "share_of_change": 0.093,
+          "share_of_base": 0.156,
+          "lift": 0.596
+        },
+        {
+          "segment": "South Korea",
+          "delta": 5063.78,
+          "share_of_change": 0.0577,
+          "share_of_base": 0.0549,
+          "lift": 1.051
+        },
+        {
+          "segment": "United Kingdom",
+          "delta": 5001.11,
+          "share_of_change": 0.057,
+          "share_of_base": 0.0367,
+          "lift": 1.551
+        }
+      ],
+      "department": [
+        {
+          "segment": "Men",
+          "delta": 53212.38,
+          "share_of_change": 0.6063,
+          "share_of_base": 0.5351,
+          "lift": 1.133
+        },
+        {
+          "segment": "Women",
+          "delta": 34554.56,
+          "share_of_change": 0.3937,
+          "share_of_base": 0.4649,
+          "lift": 0.847
+        }
+      ],
+      "category": [
+        {
+          "segment": "Sweaters",
+          "delta": 10971.67,
+          "share_of_change": 0.125,
+          "share_of_base": 0.0739,
+          "lift": 1.692
+        },
+        {
+          "segment": "Outerwear & Coats",
+          "delta": 7580.24,
+          "share_of_change": 0.0864,
+          "share_of_base": 0.1305,
+          "lift": 0.662
+        },
+        {
+          "segment": "Suits & Sport Coats",
+          "delta": 7340.4,
+          "share_of_change": 0.0836,
+          "share_of_base": 0.0582,
+          "lift": 1.437
+        },
+        {
+          "segment": "Sleep & Lounge",
+          "delta": 6850.01,
+          "share_of_change": 0.078,
+          "share_of_base": 0.0482,
+          "lift": 1.62
+        },
+        {
+          "segment": "Fashion Hoodies & Sweatshirts",
+          "delta": 6597.51,
+          "share_of_change": 0.0752,
+          "share_of_base": 0.0537,
+          "lift": 1.4
+        }
+      ],
+      "brand": [
+        {
+          "segment": "The North Face",
+          "delta": -4212.82,
+          "share_of_change": -0.048,
+          "share_of_base": 0.0138,
+          "lift": -3.475
+        },
+        {
+          "segment": "Arc'teryx",
+          "delta": 3881.05,
+          "share_of_change": 0.0442,
+          "share_of_base": 0.0052,
+          "lift": 8.54
+        },
+        {
+          "segment": "Diesel",
+          "delta": 3301.64,
+          "share_of_change": 0.0376,
+          "share_of_base": 0.0155,
+          "lift": 2.429
+        },
+        {
+          "segment": "7 For All Mankind",
+          "delta": 3248.41,
+          "share_of_change": 0.037,
+          "share_of_base": 0.0143,
+          "lift": 2.582
+        },
+        {
+          "segment": "Quiksilver",
+          "delta": 3095.03,
+          "share_of_change": 0.0353,
+          "share_of_base": 0.008,
+          "lift": 4.393
+        }
+      ],
+      "dist_center": [
+        {
+          "segment": "Philadelphia PA",
+          "delta": 12523.71,
+          "share_of_change": 0.1427,
+          "share_of_base": 0.0983,
+          "lift": 1.452
+        },
+        {
+          "segment": "Savannah GA",
+          "delta": 11341.53,
+          "share_of_change": 0.1292,
+          "share_of_base": 0.0631,
+          "lift": 2.048
+        },
+        {
+          "segment": "Mobile AL",
+          "delta": 11165.22,
+          "share_of_change": 0.1272,
+          "share_of_base": 0.1138,
+          "lift": 1.118
+        },
+        {
+          "segment": "Memphis TN",
+          "delta": 9426.32,
+          "share_of_change": 0.1074,
+          "share_of_base": 0.1287,
+          "lift": 0.835
+        },
+        {
+          "segment": "Port Authority of New York/New Jersey NY/NJ",
+          "delta": 9193.48,
+          "share_of_change": 0.1047,
+          "share_of_base": 0.0888,
+          "lift": 1.18
+        }
+      ]
+    },
+    "funnel_by_browser": {
+      "Chrome": {
+        "sessions": 7293,
+        "purchase_rate": 0.5921
+      },
+      "Firefox": {
+        "sessions": 2906,
+        "purchase_rate": 0.5939
+      },
+      "Safari": {
+        "sessions": 2826,
+        "purchase_rate": 0.6086
+      },
+      "IE": {
+        "sessions": 734,
+        "purchase_rate": 0.6131
+      },
+      "Other": {
+        "sessions": 697,
+        "purchase_rate": 0.5868
+      }
+    },
+    "funnel_by_session_source": {
+      "Email": {
+        "sessions": 6480,
+        "purchase_rate": 0.6071
+      },
+      "Adwords": {
+        "sessions": 4256,
+        "purchase_rate": 0.5874
+      },
+      "YouTube": {
+        "sessions": 1484,
+        "purchase_rate": 0.5842
+      },
+      "Facebook": {
+        "sessions": 1483,
+        "purchase_rate": 0.5947
+      },
+      "Organic": {
+        "sessions": 753,
+        "purchase_rate": 0.5843
+      }
+    },
+    "leakage": {
+      "cancelled": 0.1556,
+      "returned": 0.1023
+    },
+    "leakage_by_dist_center": {
+      "Houston TX": {
+        "revenue": 71176.5,
+        "cancelled": 0.1395,
+        "returned": 0.096
+      },
+      "Memphis TN": {
+        "revenue": 64973.84,
+        "cancelled": 0.1465,
+        "returned": 0.0901
+      },
+      "Chicago IL": {
+        "revenue": 63950.1,
+        "cancelled": 0.1657,
+        "returned": 0.0884
+      },
+      "Mobile AL": {
+        "revenue": 60282.17,
+        "cancelled": 0.1485,
+        "returned": 0.1279
+      },
+      "Philadelphia PA": {
+        "revenue": 54928.72,
+        "cancelled": 0.1461,
+        "returned": 0.1137
+      },
+      "Port Authority of New York/New Jersey NY/NJ": {
+        "revenue": 47512.06,
+        "cancelled": 0.1576,
+        "returned": 0.0964
+      },
+      "Los Angeles CA": {
+        "revenue": 46766.79,
+        "cancelled": 0.1431,
+        "returned": 0.0956
+      },
+      "Savannah GA": {
+        "revenue": 38571.46,
+        "cancelled": 0.1491,
+        "returned": 0.1011
+      },
+      "New Orleans LA": {
+        "revenue": 37498.46,
+        "cancelled": 0.1568,
+        "returned": 0.1119
+      },
+      "Charleston SC": {
+        "revenue": 33709.8,
+        "cancelled": 0.1807,
+        "returned": 0.0746
+      }
+    },
+    "leakage_by_dist_center_previous_month": {
+      "Houston TX": 0.0798,
+      "Memphis TN": 0.091,
+      "Chicago IL": 0.0895,
+      "Mobile AL": 0.0956,
+      "Philadelphia PA": 0.1345,
+      "Port Authority of New York/New Jersey NY/NJ": 0.0864,
+      "Los Angeles CA": 0.0791,
+      "New Orleans LA": 0.0913,
+      "Savannah GA": 0.0663,
+      "Charleston SC": 0.0893
+    }
+  },
+  "last_3_months": {
+    "period": [
+      "2026-06",
+      "2026-07",
+      "2026-08"
+    ],
+    "headline": {
+      "months": [
+        "2026-06",
+        "2026-07",
+        "2026-08"
+      ],
+      "revenue": 1338896.9315210953,
+      "net_revenue": 1003827.9812044092,
+      "orders": 15793,
+      "items": 22883,
+      "profit": 695948.1613430297,
+      "aov": 84.77787193826983,
+      "margin": 0.5197921848639807
+    },
+    "vs_previous_3_months": {
+      "prev": [
+        "2026-03",
+        "2026-04",
+        "2026-05"
+      ],
+      "cur": [
+        "2026-06",
+        "2026-07",
+        "2026-08"
+      ],
+      "revenue_prev": 1013927.23,
+      "revenue_cur": 1338896.93,
+      "delta": 324969.7,
+      "delta_pct": 0.3205,
+      "volume_effect": 362110.64,
+      "aov_effect": -37140.94,
+      "volume_share": 1.1143,
+      "aov_share": -0.1143
+    },
+    "zscore_by_month": {
+      "2026-06": 0.45,
+      "2026-07": 0.87,
+      "2026-08": 2.06
+    },
+    "unusual_months": [
+      "2026-08"
+    ],
+    "drivers": [],
+    "net_drivers": [],
+    "contribution_top5": {
+      "customer_type": [
+        {
+          "segment": "returning",
+          "delta": 196325.1,
+          "share_of_change": 0.6041,
+          "share_of_base": 0.4468,
+          "lift": 1.352
+        },
+        {
+          "segment": "new",
+          "delta": 128644.6,
+          "share_of_change": 0.3959,
+          "share_of_base": 0.5532,
+          "lift": 0.716
+        }
+      ],
+      "acq_source": [
+        {
+          "segment": "Search",
+          "delta": 236656.41,
+          "share_of_change": 0.7282,
+          "share_of_base": 0.7001,
+          "lift": 1.04
+        },
+        {
+          "segment": "Organic",
+          "delta": 45279.1,
+          "share_of_change": 0.1393,
+          "share_of_base": 0.1555,
+          "lift": 0.896
+        },
+        {
+          "segment": "Email",
+          "delta": 18424.91,
+          "share_of_change": 0.0567,
+          "share_of_base": 0.0452,
+          "lift": 1.255
+        },
+        {
+          "segment": "Facebook",
+          "delta": 14896.35,
+          "share_of_change": 0.0458,
+          "share_of_base": 0.0591,
+          "lift": 0.775
+        },
+        {
+          "segment": "Display",
+          "delta": 9712.93,
+          "share_of_change": 0.0299,
+          "share_of_base": 0.0401,
+          "lift": 0.745
+        }
+      ],
+      "country": [
+        {
+          "segment": "United States",
+          "delta": 90024.19,
+          "share_of_change": 0.277,
+          "share_of_base": 0.2217,
+          "lift": 1.25
+        },
+        {
+          "segment": "China",
+          "delta": 89761.81,
+          "share_of_change": 0.2762,
+          "share_of_base": 0.3506,
+          "lift": 0.788
+        },
+        {
+          "segment": "Brasil",
+          "delta": 51846.37,
+          "share_of_change": 0.1595,
+          "share_of_base": 0.1475,
+          "lift": 1.082
+        },
+        {
+          "segment": "South Korea",
+          "delta": 27614.96,
+          "share_of_change": 0.085,
+          "share_of_base": 0.0493,
+          "lift": 1.724
+        },
+        {
+          "segment": "Germany",
+          "delta": 17226.52,
+          "share_of_change": 0.053,
+          "share_of_base": 0.0372,
+          "lift": 1.424
+        }
+      ],
+      "department": [
+        {
+          "segment": "Men",
+          "delta": 180263.7,
+          "share_of_change": 0.5547,
+          "share_of_base": 0.5352,
+          "lift": 1.036
+        },
+        {
+          "segment": "Women",
+          "delta": 144706.0,
+          "share_of_change": 0.4453,
+          "share_of_base": 0.4648,
+          "lift": 0.958
+        }
+      ],
+      "category": [
+        {
+          "segment": "Outerwear & Coats",
+          "delta": 42911.04,
+          "share_of_change": 0.132,
+          "share_of_base": 0.1258,
+          "lift": 1.049
+        },
+        {
+          "segment": "Jeans",
+          "delta": 33870.21,
+          "share_of_change": 0.1042,
+          "share_of_base": 0.1193,
+          "lift": 0.874
+        },
+        {
+          "segment": "Sweaters",
+          "delta": 30819.46,
+          "share_of_change": 0.0948,
+          "share_of_base": 0.0749,
+          "lift": 1.267
+        },
+        {
+          "segment": "Swim",
+          "delta": 23906.76,
+          "share_of_change": 0.0736,
+          "share_of_base": 0.0561,
+          "lift": 1.31
+        },
+        {
+          "segment": "Fashion Hoodies & Sweatshirts",
+          "delta": 22357.16,
+          "share_of_change": 0.0688,
+          "share_of_base": 0.0544,
+          "lift": 1.265
+        }
+      ],
+      "brand": [
+        {
+          "segment": "Oakley",
+          "delta": 6704.4,
+          "share_of_change": 0.0206,
+          "share_of_base": 0.0071,
+          "lift": 2.888
+        },
+        {
+          "segment": "Carhartt",
+          "delta": 6558.55,
+          "share_of_change": 0.0202,
+          "share_of_base": 0.0151,
+          "lift": 1.334
+        },
+        {
+          "segment": "Calvin Klein",
+          "delta": 6496.54,
+          "share_of_change": 0.02,
+          "share_of_base": 0.0194,
+          "lift": 1.029
+        },
+        {
+          "segment": "Diesel",
+          "delta": 4909.81,
+          "share_of_change": 0.0151,
+          "share_of_base": 0.0209,
+          "lift": 0.724
+        },
+        {
+          "segment": "Ray-Ban",
+          "delta": 4784.07,
+          "share_of_change": 0.0147,
+          "share_of_base": 0.0085,
+          "lift": 1.727
+        }
+      ],
+      "dist_center": [
+        {
+          "segment": "Mobile AL",
+          "delta": 43585.34,
+          "share_of_change": 0.1341,
+          "share_of_base": 0.1104,
+          "lift": 1.215
+        },
+        {
+          "segment": "Chicago IL",
+          "delta": 41865.26,
+          "share_of_change": 0.1288,
+          "share_of_base": 0.1253,
+          "lift": 1.028
+        },
+        {
+          "segment": "Memphis TN",
+          "delta": 40926.0,
+          "share_of_change": 0.1259,
+          "share_of_base": 0.13,
+          "lift": 0.969
+        },
+        {
+          "segment": "Houston TX",
+          "delta": 40831.16,
+          "share_of_change": 0.1256,
+          "share_of_base": 0.1456,
+          "lift": 0.863
+        },
+        {
+          "segment": "Philadelphia PA",
+          "delta": 40528.42,
+          "share_of_change": 0.1247,
+          "share_of_base": 0.0916,
+          "lift": 1.362
+        }
+      ]
+    }
+  },
+  "known_wrong_answers": {
+    "revenue_last_month_by_item_month": 516172.14,
+    "revenue_last_month_net_instead_of_gross": 388486.87,
+    "revenue_last_month_fanout": 993142.21,
+    "aov_last_3_months_as_mean_of_monthly": 84.83
+  }
+}

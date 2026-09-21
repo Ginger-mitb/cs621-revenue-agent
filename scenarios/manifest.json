@@ -1,0 +1,158 @@
+{
+  "_meta": {
+    "base_db_sha256": "ebea762ff4eef3b01cf6ce0de08ec1990e930cd2c9fd1fb3f98772dfdf1440a4"
+  },
+  "S01": {
+    "tag": "single_dim",
+    "db": "scenarios/S01.sqlite",
+    "db_sha256": "d092e40e79a85c376aa33da76d37962ea4e8a065c661c12adb18f0054f47810b",
+    "truth": "reference/truth/S01.json",
+    "seed": [
+      20260901,
+      1
+    ],
+    "generated_at_utc": "2026-09-18T08:08:18+00:00",
+    "event": [
+      "August 2026 Facebook acquisition campaign: about 700 new customers signed up through Facebook and placed a first order, so Facebook-acquired orders were 3x July's. Nothing else changed"
+    ],
+    "expect": [
+      {
+        "dimension": "acq_source",
+        "segment": "Facebook",
+        "measure": "revenue",
+        "direction": "up",
+        "unusual": true
+      }
+    ],
+    "verification": {
+      "structural_tests_passed": 18,
+      "structural_tests_run": 18,
+      "arithmetic": {
+        "2026-08": {
+          "revenue": 54208.52,
+          "net_revenue": 39611.92,
+          "orders": 704.0,
+          "items": 976.0
+        }
+      },
+      "margins": {
+        "zscore_last_month": 3.63,
+        "acq_source=Facebook (revenue)": {
+          "share_of_change": 0.4298,
+          "lift": 8.759,
+          "rank": 1,
+          "others_flagged": []
+        }
+      }
+    }
+  },
+  "S02": {
+    "tag": "mechanism_chain",
+    "db": "scenarios/S02.sqlite",
+    "db_sha256": "e1ca3b9192585df5ecbaf5c6a4d47e09fbbd07cd98e3e16a78a24adcb886e5c1",
+    "truth": "reference/truth/S02.json",
+    "seed": [
+      20260901,
+      2
+    ],
+    "generated_at_utc": "2026-09-18T08:07:22+00:00",
+    "event": [
+      "Chicago IL distribution centre has been shipping a mislabelled batch since July 2026: 80% of the orders it fulfils come back. Gross revenue is untouched, net revenue and the returned share show it, and only when split by distribution centre"
+    ],
+    "expect": [
+      {
+        "dimension": "dist_center",
+        "segment": "Chicago IL",
+        "measure": "returned_share",
+        "direction": "up",
+        "months": [
+          "2026-07",
+          "2026-08"
+        ],
+        "unusual": false
+      }
+    ],
+    "verification": {
+      "structural_tests_passed": 18,
+      "structural_tests_run": 18,
+      "arithmetic": {
+        "2026-07": {
+          "revenue": 0.0,
+          "net_revenue": -20043.54,
+          "orders": 0.0,
+          "items": 0.0
+        },
+        "2026-08": {
+          "revenue": 0.0,
+          "net_revenue": -20764.15,
+          "orders": 0.0,
+          "items": 0.0
+        }
+      },
+      "margins": {
+        "zscore_last_month": 1.99,
+        "dist_center=Chicago IL (returned_share)": {
+          "returned_share": {
+            "2026-07": {
+              "planted": 0.455,
+              "others_max": 0.135,
+              "base": 0.09
+            },
+            "2026-08": {
+              "planted": 0.413,
+              "others_max": 0.128,
+              "base": 0.088
+            }
+          },
+          "returned_share_history": {
+            "2026-01": 0.104,
+            "2026-02": 0.098,
+            "2026-03": 0.101,
+            "2026-04": 0.103,
+            "2026-05": 0.11,
+            "2026-06": 0.095,
+            "2026-07": 0.158,
+            "2026-08": 0.158
+          },
+          "drivers_revenue": [],
+          "drivers_net_revenue": [
+            [
+              "dist_center",
+              "Philadelphia PA"
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "S03": {
+    "tag": "no_driver",
+    "db": "scenarios/S03.sqlite",
+    "db_sha256": "ebea762ff4eef3b01cf6ce0de08ec1990e930cd2c9fd1fb3f98772dfdf1440a4",
+    "truth": "reference/truth/S03.json",
+    "seed": [
+      20260901,
+      3
+    ],
+    "generated_at_utc": "2026-09-18T08:07:39+00:00",
+    "event": [
+      "control: the untouched snapshot"
+    ],
+    "expect": [],
+    "verification": {
+      "structural_tests_passed": 18,
+      "structural_tests_run": 18,
+      "arithmetic": "identical to base",
+      "margins": {
+        "zscore_last_month": 1.99,
+        "drivers_revenue": [],
+        "drivers_net_revenue": [
+          [
+            "dist_center",
+            "Philadelphia PA"
+          ]
+        ]
+      }
+    }
+  }
+}
